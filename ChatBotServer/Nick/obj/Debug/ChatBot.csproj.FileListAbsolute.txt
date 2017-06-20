@@ -10,3 +10,6 @@ c:\users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\Nick\obj\Debu
 c:\users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\Nick\obj\Debug\Nick.pdb
 c:\users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\Nick\obj\Debug\Nick.Migrations.Init.resources
 c:\users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\Nick\obj\Debug\ChatBot.csproj.GenerateResource.Cache
+C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\Nick\bin\Debug\Nick.exe.config
+C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\Nick\obj\Debug\Nick.exe
+C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\Nick\obj\Debug\Nick.pdb

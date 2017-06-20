@@ -216,3 +216,6 @@ C:\Users\Nikhil_Pularru\Documents\GOV ChatBot\DellChatBot\DellChatBot\obj\Debug\
 C:\Users\Nikhil_Pularru\Documents\GOV ChatBot\DellChatBot\DellChatBot\obj\Debug\DellChatBot.InitialBotForm.resources
 C:\Users\Nikhil_Pularru\Documents\GOV ChatBot\DellChatBot\DellChatBot\obj\Debug\DellChatBot.Properties.Resources.resources
 C:\Users\Nikhil_Pularru\Documents\GOV ChatBot\DellChatBot\DellChatBot\obj\Debug\DellChatBot.csproj.GenerateResource.Cache
+C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotClient\DellChatBot\bin\Debug\DellChatBot.exe.config
+C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotClient\DellChatBot\obj\Debug\DellChatBot.exe
+C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotClient\DellChatBot\obj\Debug\DellChatBot.pdb
