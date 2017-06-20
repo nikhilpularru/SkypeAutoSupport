@@ -10,3 +10,15 @@ c:\users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\Nick\obj\Debu
 c:\users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\Nick\obj\Debug\Nick.pdb
 c:\users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\Nick\obj\Debug\Nick.Migrations.Init.resources
 c:\users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\Nick\obj\Debug\ChatBot.csproj.GenerateResource.Cache
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\bin\Debug\Nick.exe.config
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\obj\Debug\Nick.exe
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\obj\Debug\Nick.pdb
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\bin\Debug\Nick.exe
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\bin\Debug\Nick.pdb
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\bin\Debug\EntityFramework.dll
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\bin\Debug\EntityFramework.xml
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\obj\Debug\ChatBot.csprojResolveAssemblyReference.cache
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\obj\Debug\Nick.Migrations.Init.resources
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\Nick\obj\Debug\ChatBot.csproj.GenerateResource.Cache

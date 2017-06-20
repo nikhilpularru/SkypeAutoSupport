@@ -17,7 +17,7 @@ namespace ChatBot.Data.Data
 
         public ChatBotContext() : base("ChatBotConnection")
         {
-
+            Database.SetInitializer(new DropCreateDatabaseAlways<ChatBotContext>());
         }
 
     }
