@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBot", "Nick\ChatBot.csproj", "{8D855349-35E8-4F9B-BAA8-35C01F30F3C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBot.WebApi", "ChatBot.WebApi\ChatBot.WebApi.csproj", "{5AF5CA0D-7C73-4B5F-879C-DA2B670D758C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBot.Data", "ChatBot.Data\ChatBot.Data.csproj", "{8230B2A2-7B8E-4E65-8106-E6AA8B733A6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D855349-35E8-4F9B-BAA8-35C01F30F3C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D855349-35E8-4F9B-BAA8-35C01F30F3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D855349-35E8-4F9B-BAA8-35C01F30F3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D855349-35E8-4F9B-BAA8-35C01F30F3C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF5CA0D-7C73-4B5F-879C-DA2B670D758C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF5CA0D-7C73-4B5F-879C-DA2B670D758C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF5CA0D-7C73-4B5F-879C-DA2B670D758C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF5CA0D-7C73-4B5F-879C-DA2B670D758C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8230B2A2-7B8E-4E65-8106-E6AA8B733A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8230B2A2-7B8E-4E65-8106-E6AA8B733A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8230B2A2-7B8E-4E65-8106-E6AA8B733A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8230B2A2-7B8E-4E65-8106-E6AA8B733A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
