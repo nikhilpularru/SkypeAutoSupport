@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChatBot.Data.Entities
 {
-    public class DefaultMessage : EntityAudit
+    public class DefaultMessege : EntityAudit
     {
         public string MsgRequest { get; set; }
         public string MsgResponse { get; set; }

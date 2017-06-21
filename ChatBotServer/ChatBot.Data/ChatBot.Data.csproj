@@ -51,8 +51,9 @@
   <ItemGroup>
     <Compile Include="Data\ChatBotContext.cs" />
     <Compile Include="Entities\Category.cs" />
-    <Compile Include="Entities\DefaultMessage.cs" />
+    <Compile Include="Entities\DefaultMessege.cs" />
     <Compile Include="Entities\Problem.cs" />
+    <Compile Include="Entities\QueryContext.cs" />
     <Compile Include="Entities\Resource.cs" />
     <Compile Include="EntityHelpers\EntityAudit.cs" />
     <Compile Include="EntityHelpers\EntityId.cs" />

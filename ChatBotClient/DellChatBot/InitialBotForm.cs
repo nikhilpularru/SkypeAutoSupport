@@ -53,7 +53,7 @@ namespace DellChatBot
             var text = e.Text.Replace(Environment.NewLine, string.Empty);
 
             //chatLbl1.Text = text.ToString();
-            //StartConversation("pavan_bhushan_k_n@dell.com", text);
+            StartConversation("arundhati_mahapatro@dell.com", text);
             string myRemoteParticipantUri = (sender as InstantMessageModality).Endpoint.Uri.Replace("sip:", string.Empty);
             LogMessage(myRemoteParticipantUri, text);
             try
@@ -95,7 +95,7 @@ namespace DellChatBot
 
             Conversation _Conversation = _conversationManager.AddConversation();
             _Conversation.AddParticipant(_lyncClient.ContactManager.GetContactByUri(myRemoteParticipantUri));
-
+            
 
             Dictionary<InstantMessageContentType, String> messages = new Dictionary<InstantMessageContentType, String>();
 

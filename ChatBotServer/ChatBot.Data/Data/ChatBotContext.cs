@@ -12,7 +12,7 @@ namespace ChatBot.Data.Data
     {
         public DbSet<Resource> Resources { get; set; }
         public DbSet<Problem> Problems { get; set; }
-        public DbSet<DefaultMessage> DefaultMessages { get; set; }
+        public DbSet<DefaultMessege> DefaultMessages { get; set; }
         public DbSet<Category> Categories { get; set; }
 
         public ChatBotContext() : base("ChatBotConnection")
