@@ -10,12 +10,13 @@ namespace Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(ChatBotContext context)
         {
             SeedAllProblems().ForEach(c => context.Problems.AddOrUpdate(c));
-            SeedAllCatagories().ForEach(c => context.Categories.AddOrUpdate(c));
+          //  SeedAllCatagories().ForEach(c => context.Categories.AddOrUpdate(c));
             SeedAllResources().ForEach(c => context.Resources.AddOrUpdate(c));
             SeedAllDefaultMesseges().ForEach(c => context.DefaultMessages.AddOrUpdate(c));
             context.SaveChanges();
@@ -25,9 +26,21 @@ namespace Data.Migrations
         {
             List<Problem> problemList = new List<Problem>
             {
-                new Problem { ProblemName ="TFS"   },
-                new Problem { ProblemName ="GAFT"  },
-                new Problem { ProblemName ="WiFi"  }
+                new Problem { ProblemName ="TFS" , Categories = new  List<Category> {
+                      new Category { CategoryName ="Admin TFS" },
+                new Category { CategoryName ="TFS Merge" },
+
+                }  },
+                new Problem { ProblemName ="GAFT" , Categories = new  List<Category> {
+                    new Category { CategoryName ="GAFT KT" },
+                new Category { CategoryName ="GAFT Team" },
+
+                } },
+                new Problem { ProblemName ="WiFi" , Categories = new  List<Category> {
+                        new Category { CategoryName ="WiFi Trouble" },
+                new Category { CategoryName ="Wifi Ticket" }
+
+                }  }
 
 
             };
@@ -75,6 +88,8 @@ namespace Data.Migrations
             };
             return defaultMessegeList;
         }
+
+
 
     }
 }

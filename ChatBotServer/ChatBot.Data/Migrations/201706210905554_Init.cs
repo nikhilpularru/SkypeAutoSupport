@@ -20,12 +20,11 @@ namespace Data.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
-                "dbo.DefaultMessages",
+                "dbo.Problems",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        MsgRequest = c.String(),
-                        MsgResponse = c.String(),
+                        ProblemName = c.String(),
                         CreatedOn = c.DateTime(nullable: false),
                         CreatedBy = c.String(),
                         ModifiedOn = c.DateTime(nullable: false),
@@ -33,11 +32,12 @@ namespace Data.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
-                "dbo.Problems",
+                "dbo.DefaultMesseges",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        ProblemName = c.String(),
+                        MsgRequest = c.String(),
+                        MsgResponse = c.String(),
                         CreatedOn = c.DateTime(nullable: false),
                         CreatedBy = c.String(),
                         ModifiedOn = c.DateTime(nullable: false),
@@ -56,13 +56,31 @@ namespace Data.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.ProblemCategory",
+                c => new
+                    {
+                        ProblemRefId = c.Int(nullable: false),
+                        CategoryRefId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => new { t.ProblemRefId, t.CategoryRefId })
+                .ForeignKey("dbo.Problems", t => t.ProblemRefId, cascadeDelete: true)
+                .ForeignKey("dbo.Categories", t => t.CategoryRefId, cascadeDelete: true)
+                .Index(t => t.ProblemRefId)
+                .Index(t => t.CategoryRefId);
+            
         }
         
         public override void Down()
         {
+            DropForeignKey("dbo.ProblemCategory", "CategoryRefId", "dbo.Categories");
+            DropForeignKey("dbo.ProblemCategory", "ProblemRefId", "dbo.Problems");
+            DropIndex("dbo.ProblemCategory", new[] { "CategoryRefId" });
+            DropIndex("dbo.ProblemCategory", new[] { "ProblemRefId" });
+            DropTable("dbo.ProblemCategory");
             DropTable("dbo.Resources");
+            DropTable("dbo.DefaultMesseges");
             DropTable("dbo.Problems");
-            DropTable("dbo.DefaultMessages");
             DropTable("dbo.Categories");
         }
     }
