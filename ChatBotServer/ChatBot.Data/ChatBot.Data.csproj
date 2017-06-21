@@ -57,12 +57,21 @@
     <Compile Include="Entities\Resource.cs" />
     <Compile Include="EntityHelpers\EntityAudit.cs" />
     <Compile Include="EntityHelpers\EntityId.cs" />
+    <Compile Include="Migrations\201706202024591_Init.cs" />
+    <Compile Include="Migrations\201706202024591_Init.Designer.cs">
+      <DependentUpon>201706202024591_Init.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706202024591_Init.resx">
+      <DependentUpon>201706202024591_Init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
