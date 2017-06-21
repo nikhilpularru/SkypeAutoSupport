@@ -1,10 +1,5 @@
-﻿using ChatBot;
-using ChatBot.Data.Data;
-using System;
-using System.Collections.Generic;
+﻿using ChatBot.Data.Data;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace ChatBot.WebApi.Controllers
