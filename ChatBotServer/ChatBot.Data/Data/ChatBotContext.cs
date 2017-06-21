@@ -15,5 +15,19 @@ namespace ChatBot.Data.Data
            // Database.SetInitializer(new DropCreateDatabaseAlways<ChatBotContext>());
         }
 
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Problem>().HasMany<Category>(c => c.Categories)
+                  .WithMany(p => p.Problems)
+                  .Map(
+                 pc =>
+                 {
+                     pc.MapLeftKey("ProblemRefId");
+                     pc.MapRightKey("CategoryRefId");
+                     pc.ToTable("ProblemCategory");
+                 }
+                );
+        }
     }
 }

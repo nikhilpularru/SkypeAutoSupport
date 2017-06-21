@@ -10,5 +10,7 @@ namespace ChatBot.Data.Entities
     public class Problem : EntityAudit
     {
         public string ProblemName { get; set; }
+
+        public virtual ICollection<Category> Categories { get; set; }
     }
 }
