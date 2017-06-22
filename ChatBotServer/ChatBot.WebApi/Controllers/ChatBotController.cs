@@ -1,4 +1,6 @@
 ﻿using ChatBot.Data.Data;
+using ChatBot.Data.Entities;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
@@ -17,8 +19,10 @@ namespace ChatBot.WebApi.Controllers
         [Route("GetAllProblems")]
         public IHttpActionResult GetAllProblemTest()
         {
-            
-            return Ok(chatbotContext.Problems.ToList());
+            List<Problem> problems = chatbotContext.Problems.ToList();
+
+
+            return Ok(problems);
         }
     }
 }

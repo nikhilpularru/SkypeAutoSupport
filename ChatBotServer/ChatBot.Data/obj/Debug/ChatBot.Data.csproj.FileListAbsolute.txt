@@ -8,18 +8,6 @@ c:\Users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\ChatBot.Data\
 c:\Users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\ChatBot.Data\obj\Debug\ChatBot.Data.csprojResolveAssemblyReference.cache
 c:\Users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\ChatBot.Data\obj\Debug\ChatBot.Data.dll
 c:\Users\nikhil_pularru\documents\visual studio 2015\Projects\Nick\ChatBot.Data\obj\Debug\ChatBot.Data.pdb
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\ChatBot.Data.dll.config
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\ChatBot.Data.dll
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\ChatBot.Data.pdb
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.dll
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.xml
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.csprojResolveAssemblyReference.cache
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.dll
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.pdb
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\obj\Debug\Data.Migrations.Init.resources
-C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.csproj.GenerateResource.Cache
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\bin\Debug\ChatBot.Data.dll.config
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\bin\Debug\ChatBot.Data.dll
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\bin\Debug\ChatBot.Data.pdb
@@ -33,3 +21,12 @@ C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.dll
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.pdb
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\Data.Migrations.AddedmappingtableProblemCategory.resources
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\ChatBot.Data.dll.config
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\ChatBot.Data.dll
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\ChatBot.Data.pdb
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.dll
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.xml
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.dll
+C:\Users\pavan_bhushan_k_n\Source\Repos\NewRepo\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.pdb

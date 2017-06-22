@@ -6,7 +6,11 @@ using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using System.Text;
-using Microsoft.Lync.Model.Conversation.AudioVideo;
+using ChatBot.Data.Data;
+using Flurl.Http;
+using System.Net.Http;
+using System.Threading.Tasks;
+using ChatBot.Data.Entities;
 
 namespace DellChatBot
 {
@@ -16,6 +20,11 @@ namespace DellChatBot
         private LyncClient _lyncClient;
         private ConversationManager _conversationManager;
         string response = string.Empty;
+        private ChatBotContext context;
+        private StringBuilder strResult;
+        private string url;
+        HttpClient client;
+        private List<Problem> problems;
 
         public InitialBotForm()
         {
@@ -23,6 +32,15 @@ namespace DellChatBot
             _lyncClient = LyncClient.GetClient();
             _conversationManager = _lyncClient.ConversationManager;
             _conversationManager.ConversationAdded += ConversationAdded;
+            context = new ChatBotContext();
+            strResult = new StringBuilder();
+            client = new HttpClient();
+            url = "http://localhost:7014/api/chatbot/GetAllProblems";
+            GetDataFromApi();
+
+
+
+
 
         }
 
@@ -53,19 +71,25 @@ namespace DellChatBot
             var text = e.Text.Replace(Environment.NewLine, string.Empty);
 
             //chatLbl1.Text = text.ToString();
-            StartConversation("arundhati_mahapatro@dell.com", text);
+            //StartConversation("arundhati_mahapatro@dell.com", text);
             string myRemoteParticipantUri = (sender as InstantMessageModality).Endpoint.Uri.Replace("sip:", string.Empty);
             LogMessage(myRemoteParticipantUri, text);
             try
             {
-                string strResult = "";
+
                 if (text.ToLower().Equals("hi") || text.ToLower().Equals("hello"))
                 {
-                    strResult = "Hi";
+                    strResult.Append("Hi");
                 }
                 else
                 {
-                    strResult = "You are talking about " +textAnalyser.RemoveStopwords(text);
+                    strResult.Append("You are talking about " + textAnalyser.RemoveStopwords(text));
+
+                    problems.ForEach(p =>  strResult.Append(p.ProblemName + " ") );
+
+
+
+
 
                 }
             (sender as InstantMessageModality).BeginSendMessage(strResult + "\n https://dell.service-now.com/esp/ :)", null, null);
@@ -95,7 +119,7 @@ namespace DellChatBot
 
             Conversation _Conversation = _conversationManager.AddConversation();
             _Conversation.AddParticipant(_lyncClient.ContactManager.GetContactByUri(myRemoteParticipantUri));
-            
+
 
             Dictionary<InstantMessageContentType, String> messages = new Dictionary<InstantMessageContentType, String>();
 
@@ -108,6 +132,22 @@ namespace DellChatBot
         private static void LogMessage(string myRemoteParticipantUri, string MSG)
         {
 
+        }
+
+        private async Task<List<Problem>> GetDataFromApi()
+        {
+
+           
+            HttpResponseMessage response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                problems = await response.Content.ReadAsAsync<List<Problem>>();
+               
+            }
+          return problems;
+
+
+          
         }
     }
 }
