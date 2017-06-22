@@ -85,7 +85,8 @@ namespace DellChatBot
                 {
                     strResult.Append("You are talking about " + textAnalyser.RemoveStopwords(text));
 
-                    problems.ForEach(p =>  strResult.Append(p.ProblemName + " ") );
+                    // Gets the data from the database by property problems 
+                    problems.ForEach(p => strResult.Append(p.ProblemName + " \n ") );
 
 
 
