@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBot.WebApi", "ChatBot.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBot.Data", "ChatBot.Data\ChatBot.Data.csproj", "{8230B2A2-7B8E-4E65-8106-E6AA8B733A6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DellChatBot", "..\ChatBotClient\DellChatBot\DellChatBot.csproj", "{293CDE29-4291-41BD-888E-8F04069DF45D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8230B2A2-7B8E-4E65-8106-E6AA8B733A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8230B2A2-7B8E-4E65-8106-E6AA8B733A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8230B2A2-7B8E-4E65-8106-E6AA8B733A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293CDE29-4291-41BD-888E-8F04069DF45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293CDE29-4291-41BD-888E-8F04069DF45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293CDE29-4291-41BD-888E-8F04069DF45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293CDE29-4291-41BD-888E-8F04069DF45D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
