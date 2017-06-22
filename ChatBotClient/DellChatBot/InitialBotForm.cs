@@ -36,7 +36,7 @@ namespace DellChatBot
             strResult = new StringBuilder();
             client = new HttpClient();
             url = "http://localhost:7014/api/chatbot/GetAllProblems";
-            GetDataFromApi();
+            //GetDataFromApi();
 
 
 
@@ -85,7 +85,7 @@ namespace DellChatBot
                 {
                     strResult.Append("You are talking about " + textAnalyser.RemoveStopwords(text));
 
-                    problems.ForEach(p =>  strResult.Append(p.ProblemName + " ") );
+                    //problems.ForEach(p =>  strResult.Append(p.ProblemName + " ") );
 
 
 

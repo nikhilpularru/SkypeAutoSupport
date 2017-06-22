@@ -30,5 +30,3 @@ C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.csprojResolveAssemblyReference.cache
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.dll
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.pdb
-C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\Data.Migrations.NewUnitedSeeding.resources
-C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.csproj.GenerateResource.Cache
