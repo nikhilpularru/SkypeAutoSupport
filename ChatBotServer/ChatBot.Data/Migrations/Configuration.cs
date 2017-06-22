@@ -15,24 +15,27 @@ namespace Data.Migrations
 
         protected override void Seed(ChatBotContext context)
         {
-            SeedAllProblems().ForEach(c => context.Problems.AddOrUpdate(c));
-          //  SeedAllCatagories().ForEach(c => context.Categories.AddOrUpdate(c));
-            SeedAllResources().ForEach(c => context.Resources.AddOrUpdate(c));
+            SeedAllProblemsCategories().ForEach(c => context.Problems.AddOrUpdate(c));
+            SeedAllCatagoriesResponses().ForEach(c => context.Categories.AddOrUpdate(c));
+            //SeedAllResources().ForEach(c => context.Resources.AddOrUpdate(c));
             SeedAllDefaultMesseges().ForEach(c => context.DefaultMessages.AddOrUpdate(c));
             context.SaveChanges();
         }
 
-        private List<Problem> SeedAllProblems()
+
+        private List<Problem> SeedAllProblemsCategories()
         {
             List<Problem> problemList = new List<Problem>
             {
                 new Problem { ProblemName ="TFS" , Categories = new  List<Category> {
-                      new Category { CategoryName ="Admin TFS" },
-                new Category { CategoryName ="TFS Merge" },
-
+                      new Category { CategoryName ="Admin TFS" , Resources =
+                            new List<Resource>{ new Resource {  ResourceName = "Please use the following link to raise the request: https://dell.service-now.com/esp/" } } },
+                new Category { CategoryName ="TFS Merge", Resources =
+                            new List<Resource> { new Resource {ResourceName ="Perform the folowing steps: 1. abc \n 2. abc \n 3. abc \n 3. abc" } } },
                 }  },
                 new Problem { ProblemName ="GAFT" , Categories = new  List<Category> {
-                    new Category { CategoryName ="GAFT KT" },
+                        new Category { CategoryName ="GAFT KT", Resources =
+                    new List<Resource> { new Resource { ResourceName ="Please refer to following Link: https://www.DELLdocumenthub/GAFT/GAFT_KT.docx" } } },
                 new Category { CategoryName ="GAFT Team" },
 
                 } },
@@ -47,33 +50,59 @@ namespace Data.Migrations
             return problemList;
         }
 
-        private List<Category> SeedAllCatagories()
+        private List<Category> SeedAllCatagoriesResponses()
         {
-            List<Category> catagoryList = new List<Category>
+            List<Category> categoryList = new List<Category>
             {
-                new Category { CategoryName ="Admin TFS" },
-                new Category { CategoryName ="TFS Merge" },
-                new Category { CategoryName ="GAFT KT" },
-                new Category { CategoryName ="GAFT Team" },
-                new Category { CategoryName ="WiFi Trouble" },
-                new Category { CategoryName ="Wifi Ticket" }
+               new Category { CategoryName ="Admin TFS", Resources =
+                    new List<Resource>{ new Resource {  ResourceName = "Please use the following link to raise the request: https://dell.service-now.com/esp/" } } 
+                },
+               new Category { CategoryName ="TFS Merge", Resources =
+                    new List<Resource> { new Resource {ResourceName ="Perform the folowing steps: 1. abc \n 2. abc \n 3. abc \n 3. abc" } }
+                },
+                new Category { CategoryName ="GAFT KT", Resources =
+                    new List<Resource> { new Resource { ResourceName ="Please refer to following Link: https://www.DELLdocumenthub/GAFT/GAFT_KT.docx" } }
+                },
+                new Category { CategoryName ="GAFT Team", Resources =
+                    new List<Resource> { new Resource { ResourceName ="pavan_bhushan_k_n@dell.com;anand_eswaran@dell.com" } }
+                },
+                new Category { CategoryName ="WiFi Trouble", Resources =
+                    new List<Resource> { new Resource { ResourceName ="Use LAN" } }
+                },
+                new Category { CategoryName ="Wifi Ticket", Resources =
+                    new List<Resource> { new Resource { ResourceName ="Please raise the ticket in the following location: https://dell.service-now.com/esp/ " } }
+                }
             };
-            return catagoryList;
+            return categoryList;
         }
 
-        private List<Resource> SeedAllResources()
-        {
-            List<Resource> resourceList = new List<Resource>
-            {
-                new Resource { ResourceName ="Please use the following link to raise the request: https://dell.service-now.com/esp/" },
-                new Resource { ResourceName ="Perform the folowing steps: 1. abc \n 2. abc \n 3. abc \n 3. abc" },
-                new Resource { ResourceName ="Please refer to following Link: https://www.DELLdocumenthub/GAFT/GAFT_KT.docx" },
-                new Resource { ResourceName ="pavan_bhushan_k_n@dell.com;anand_eswaran@dell.com" },
-                new Resource { ResourceName ="Use LAN" },
-                new Resource { ResourceName ="Please raise the ticket in the following location: " }
-            };
-            return resourceList;
-        }
+        //private List<Category> SeedAllCatagories()
+        //{
+        //    List<Category> catagoryList = new List<Category>
+        //    {
+        //        new Category { CategoryName ="Admin TFS" },
+        //        new Category { CategoryName ="TFS Merge" },
+        //        new Category { CategoryName ="GAFT KT" },
+        //        new Category { CategoryName ="GAFT Team" },
+        //        new Category { CategoryName ="WiFi Trouble" },
+        //        new Category { CategoryName ="Wifi Ticket" }
+        //    };
+        //    return catagoryList;
+        //}
+
+        //private List<Resource> SeedAllResources()
+        //{
+        //    List<Resource> resourceList = new List<Resource>
+        //    {
+        //        new Resource { ResourceName ="Please use the following link to raise the request: https://dell.service-now.com/esp/" },
+        //        new Resource { ResourceName ="Perform the folowing steps: 1. abc \n 2. abc \n 3. abc \n 3. abc" },
+        //        new Resource { ResourceName ="Please refer to following Link: https://www.DELLdocumenthub/GAFT/GAFT_KT.docx" },
+        //        new Resource { ResourceName ="pavan_bhushan_k_n@dell.com;anand_eswaran@dell.com" },
+        //        new Resource { ResourceName ="Use LAN" },
+        //        new Resource { ResourceName ="Please raise the ticket in the following location: https://dell.service-now.com/esp/ " }
+        //    };
+        //    return resourceList;
+        //}
 
         private List<DefaultMessege> SeedAllDefaultMesseges()
         {

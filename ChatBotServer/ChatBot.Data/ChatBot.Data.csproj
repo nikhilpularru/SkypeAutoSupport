@@ -57,13 +57,9 @@
     <Compile Include="Entities\Resource.cs" />
     <Compile Include="EntityHelpers\EntityAudit.cs" />
     <Compile Include="EntityHelpers\EntityId.cs" />
-    <Compile Include="Migrations\201706202024591_Init.cs" />
-    <Compile Include="Migrations\201706202024591_Init.Designer.cs">
-      <DependentUpon>201706202024591_Init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706210732119_Added mapping table ProblemCategory.cs" />
-    <Compile Include="Migrations\201706210732119_Added mapping table ProblemCategory.Designer.cs">
-      <DependentUpon>201706210732119_Added mapping table ProblemCategory.cs</DependentUpon>
+    <Compile Include="Migrations\201706220848566_NewUnitedSeeding.cs" />
+    <Compile Include="Migrations\201706220848566_NewUnitedSeeding.Designer.cs">
+      <DependentUpon>201706220848566_NewUnitedSeeding.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,11 +69,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706202024591_Init.resx">
-      <DependentUpon>201706202024591_Init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706210732119_Added mapping table ProblemCategory.resx">
-      <DependentUpon>201706210732119_Added mapping table ProblemCategory.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706220848566_NewUnitedSeeding.resx">
+      <DependentUpon>201706220848566_NewUnitedSeeding.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

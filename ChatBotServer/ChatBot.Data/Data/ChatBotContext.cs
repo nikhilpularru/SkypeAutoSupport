@@ -32,6 +32,18 @@ namespace ChatBot.Data.Data
                      pc.ToTable("ProblemCategory");
                  }
                 );
+
+            modelBuilder.Entity<Category>().HasMany<Resource>(c => c.Resources)
+                  .WithMany(p => p.Categories)
+                  .Map(
+                 pc =>
+                 {
+                     pc.MapLeftKey("CategoryRefId");
+                     pc.MapRightKey("ResourceRefId");
+                     pc.ToTable("CategoryResource");
+                 }
+                );
+
         }
     }
 }

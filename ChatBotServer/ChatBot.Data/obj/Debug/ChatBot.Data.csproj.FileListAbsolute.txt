@@ -28,8 +28,7 @@ C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.xml
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.csprojResolveAssemblyReference.cache
-C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\Data.Migrations.Init.resources
-C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.csproj.GenerateResource.Cache
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.dll
 C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.pdb
-C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\Data.Migrations.AddedmappingtableProblemCategory.resources
+C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\Data.Migrations.NewUnitedSeeding.resources
+C:\Users\Nikhil_Pularru\Source\Repos\SkypeAutoSupport\ChatBotServer\ChatBot.Data\obj\Debug\ChatBot.Data.csproj.GenerateResource.Cache

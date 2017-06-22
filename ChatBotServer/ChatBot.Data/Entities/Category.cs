@@ -12,5 +12,7 @@ namespace ChatBot.Data.Entities
         public string CategoryName { get; set; }
 
         public virtual ICollection<Problem> Problems { get; set; }
+
+        public virtual ICollection<Resource> Resources { get; set; }
     }
 }
