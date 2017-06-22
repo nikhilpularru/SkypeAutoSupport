@@ -14,5 +14,6 @@ namespace ChatBot.Data.Entities
         [Column(TypeName = "VARCHAR")]
         [StringLength(500)]
         public string ResourceName { get; set; }
+        public virtual ICollection<Category> Categories { get; set; }
     }
 }
